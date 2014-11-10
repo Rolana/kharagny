@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title> kharagny </title>
+		</head>
+		<h1> Register</h1>
+
+
+<%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
+    <p> First name:</br> <%= f.text_field :first_name%> </p>
+    <p> Last name:</br> <%= f.text_field :last_name%> </p>
+    <p> Username:</br> <%= f.text_field :user_name%> </p>
+    <p> Email:</br> <%= f.text_field :email%> </p>
+    <p> Password:</br> <%= f.password_field :encrypted_password%></p>
+    <p> Image URL:</br> <%= f.text_field :image_url%> </p>
+    <%= f.submit :Signup %>
+  <% end %>
+
+</form>
+</html>
